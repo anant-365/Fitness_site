@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fitness</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Ubuntu:wght@300&display=swap');
+
+        body {
+            background-image: url('image/gym_bg.jpg');
+            background-size: cover;
+            /* from here this code makes image responsive to all screen sizes*/
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            /* to here this code makes image responsive to all screen sizes*/
+            margin: 0%;
+            padding: 0%;
+        }
+
+        hr {
+            border-top: 2px solid white;
+        }
+
+        * {
+            color: white;
+            font-family: 'Raleway', sans-seri;
+        }
+
+        .container div {
+            display: inline-block;
+            margin-top: 25px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .left {
+
+            position: absolute;
+            left: 30px;
+            margin-top: 10px;
+            text-align: center;
+            font-size: 14px;
+            line-height: normal;
+            font-family: 'Raleway', sans-seri;
+            font-weight: bold;
+
+        }
+
+        .left img {
+            height: 50px;
+            width: 50px;
+            filter: invert(100%);
+        }
+
+        .center {
+
+            margin: auto;
+            margin-right: 50px;
+
+        }
+
+        li {
+            display: inline-block;
+            padding: 0px 20px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Raleway', sans-seri;
+            font-weight: bold;
+            font-size: large;
+        }
+
+        .center li a:hover,
+        .center li .active {
+            text-decoration: underline;
+            color: rgb(174, 169, 169);
+            font-size: larger;
+        }
+
+        .right {
+            position: absolute;
+            right: 30px;
+            padding: 25px;
+        }
+
+        #call:hover,
+        #mail:hover,
+        #sign_in:hover {
+            text-decoration: underline;
+            color: rgb(174, 169, 169);
+            cursor: pointer;
+            border: 3px solid white
+        }
+
+        #submit:hover,
+        #reset:hover {
+            color: rgb(174, 169, 169);
+            cursor: pointer;
+            border: 4px solid white;
+            text-decoration: underline;
+        }
+
+        #call {
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 7px;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        #mail {
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 7px;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        #sign_in {
+            background: transparent;
+            border: 2px solid white;
+            border-radius: 7px;
+            padding: 5px;
+            margin: 5px;
+            font-weight: bold;
+        }
+
+        #submit {
+            background: transparent;
+            border: 3px solid white;
+            border-radius: 7px;
+            padding: 5px;
+            margin: 15px;
+            width: 380px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .register {
+            border: 3px solid white;
+            border-radius: 15px;
+            width: 50%;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            margin: 50px auto;
+
+            font-family: 'Raleway', sans-seri;
+            text-align: center;
+        }
+
+        .form-group {
+            padding: 10px;
+        }
+
+        .form-group input {
+            border: 2px solid black;
+            border-radius: 7px;
+            text-align: center;
+            width: 380px;
+            padding: 1px;
+            margin: 10px;
+            font-size: 20px;
+            color: black;
+        }
+
+        #reset {
+            background: transparent;
+            border: 3px solid white;
+            border-radius: 7px;
+            padding: 5px;
+            margin: 15px;
+            width: 380px;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="background">
+    <header>
+        <div class="container">
+
+            <div class="left"><img src="image\gym-g672eea6e4_640.png" alt="logo"><br>अनंत Fitness</div>
+            <div class="center">
+                <ul id="ul1">
+                    <hr>
+                    <li><a href="#" class="active">Register</a></li>
+                    <li><a href="16.1_home_fitness_site.html">Home</a></li>
+                    <li><a href="16.2_about_us_fitness_site.html">About us</a></li>
+                    <li><a href="16.3_fitness_calc_fitness_site.html">Fitness Calculator</a></li>
+                    <li><a href="16.4_contact_us_fitness_site.html">Contact Us</a></li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="right">
+                <button id="call">Call Us Now</button>
+                <button id="mail">E-mail Us</button>
+                <button id="sign_in">Sign-In</button>
+            </div>
+        </div>
+    </header>
+    <div class="register">
+        <h1>Join The Best Gym of Lucknow Now !</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+                <input type="text" name="" placeholder="Enter Your Age">
+                <input type="text" name="" placeholder="Enter Your Gender">
+                <input type="text" name="" placeholder="Enter Your Locality">
+                <input type="text" name="" placeholder="Enter You E-mail ID">
+                <input type="text" name="" placeholder="Enter You Phone Number">
+                <button id="submit">Submit</button>
+                <input type="reset" id="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
